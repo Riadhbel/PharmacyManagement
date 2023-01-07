@@ -1,0 +1,14 @@
+.box1{
+    -fx-background-color: linear-gradient(#FA00FF,transparent);
+}
+
+.box2{
+    -fx-background-color: linear-gradient(#00A3FF,transparent);
+}
+.box3{
+    -fx-background-color: linear-gradient(#00FF29,transparent);
+}
+.box4{
+    -fx-background-color: linear-gradient(#FF0000,transparent);
+    -fx-opacity: 60%;
+}
