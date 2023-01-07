@@ -1,0 +1,23 @@
+.backgroundColor {
+    -fx-background-color: linear-gradient(#25B4A5,transparent);
+  }
+
+.ball1{
+    -fx-background-color: linear-gradient(#AE0088,#FFBABA);
+}
+
+.ball2{
+    -fx-background-color: linear-gradient(#003B95,#8BE3D4);
+}
+
+.ball3{
+    -fx-background-color: linear-gradient(#FF0000,#FFEBA3);
+}
+
+.ball4{
+    -fx-background-color: linear-gradient(#00CF15,#FDFF96);
+}
+
+.ball5{
+    -fx-background-color: linear-gradient(#7919C5,#FF54CF);
+}

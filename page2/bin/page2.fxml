@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="412.0" fitWidth="606.0" layoutY="-6.0">
+         <image>
+            <Image url="@../../../logo.jpeg" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="105.0" prefWidth="606.0">
+         <children>
+            <Button fx:id="comp" layoutX="46.0" layoutY="21.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="63.0" style="-fx-background-radius: 100;" styleClass="ball1" stylesheets="@style2.css" />
+            <Button fx:id="vente" layoutX="158.0" layoutY="21.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="63.0" style="-fx-background-radius: 100;" styleClass="ball2" stylesheets="@style2.css" />
+            <Button fx:id="achat" layoutX="270.0" layoutY="21.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="63.0" style="-fx-background-radius: 100;" styleClass="ball3" stylesheets="@style2.css" />
+            <Button fx:id="stock" layoutX="382.0" layoutY="21.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="63.0" style="-fx-background-radius: 100;" styleClass="ball4" stylesheets="@style2.css" />
+            <Button fx:id="quit" layoutX="494.0" layoutY="21.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="63.0" style="-fx-background-radius: 100;" styleClass="ball5" stylesheets="@style2.css" />
+            <Label layoutX="49.0" layoutY="91.0" text="Comptoire" />
+            <Label layoutX="174.0" layoutY="91.0" text="Vente" />
+            <Label layoutX="286.0" layoutY="91.0" text="Achat" />
+            <Label layoutX="399.0" layoutY="91.0" text="Stock" />
+            <Label layoutX="507.0" layoutY="91.0" text="Quitter" />
+            <ImageView blendMode="DARKEN" fitHeight="46.0" fitWidth="45.0" focusTraversable="true" layoutX="55.0" layoutY="30.0">
+               <image>
+                  <Image url="@../../../ringbell.JPG" />
+               </image>
+            </ImageView>
+            <ImageView blendMode="DARKEN" fitHeight="46.0" fitWidth="45.0" layoutX="167.0" layoutY="31.0">
+               <image>
+                  <Image url="@../../../sell.JPG" />
+               </image>
+            </ImageView>
+            <ImageView blendMode="DARKEN" fitHeight="46.0" fitWidth="45.0" layoutX="279.0" layoutY="31.0">
+               <image>
+                  <Image url="@../../../listt.JPG" />
+               </image>
+            </ImageView>
+            <ImageView blendMode="DARKEN" fitHeight="46.0" fitWidth="45.0" layoutX="391.0" layoutY="30.0">
+               <image>
+                  <Image url="@../../../stock.JPG" />
+               </image>
+            </ImageView>
+            <ImageView blendMode="DARKEN" fitHeight="46.0" fitWidth="45.0" layoutX="503.0" layoutY="30.0">
+               <image>
+                  <Image url="@../../../quit.JPG" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane layoutY="105.0" prefHeight="302.0" prefWidth="450.0">
+         <children>
+            <ImageView fitHeight="234.0" fitWidth="245.0" layoutX="184.0">
+               <image>
+                  <Image url="@../../../logoo.JPG" />
+               </image>
+            </ImageView>
+            <Label layoutX="17.0" layoutY="170.0" prefHeight="118.0" prefWidth="158.0" style="-fx-background-radius: 30;" styleClass="backgroundColor" stylesheets="@style2.css" />
+            <Label layoutX="27.0" layoutY="190.0" text="Stock en rupture :" />
+            <Label layoutX="27.0" layoutY="212.0" text="Pér. Proche:" />
+            <Label layoutX="27.0" layoutY="234.0" text="Périmés:" />
+            <Label fx:id="stockenrep" layoutX="135.0" layoutY="190.0" text="00" />
+            <Label fx:id="per" layoutX="135.0" layoutY="212.0" text="00" />
+            <Label fx:id="perimes" layoutX="135.0" layoutY="234.0" text="00" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="450.0" layoutY="105.0" prefHeight="302.0" prefWidth="158.0">
+         <children>
+            <ImageView fitHeight="249.0" fitWidth="133.0" layoutX="13.0" layoutY="39.0">
+               <image>
+                  <Image url="@../../../mmmm4.JPG" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </children>
+</Pane>
