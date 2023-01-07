@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="633.0" prefWidth="952.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="682.0" fitWidth="950.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@v870-tang-36.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="323.0" layoutY="14.0" prefHeight="38.0" prefWidth="304.0" text="Création des Achats" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="73.0" prefHeight="18.0" prefWidth="38.0" text="Date" />
+      <ChoiceBox layoutX="74.0" layoutY="69.0" prefHeight="26.0" prefWidth="102.0" />
+      <Label layoutX="181.0" layoutY="73.0" prefHeight="18.0" prefWidth="62.0" text="N ' facture" />
+      <ChoiceBox layoutX="248.0" layoutY="69.0" prefHeight="26.0" prefWidth="102.0" />
+      <Label layoutX="358.0" layoutY="73.0" prefHeight="18.0" prefWidth="38.0" text="N' BL" />
+      <ChoiceBox layoutX="399.0" layoutY="69.0" prefHeight="26.0" prefWidth="102.0" />
+      <Label layoutX="30.0" layoutY="126.0" prefHeight="18.0" prefWidth="71.0" text="Type achats" />
+      <ChoiceBox layoutX="107.0" layoutY="122.0" prefHeight="26.0" prefWidth="80.0" />
+      <Label layoutX="195.0" layoutY="127.0" prefHeight="18.0" prefWidth="95.0" text="Prix d'achats TTC" />
+      <ChoiceBox layoutX="299.0" layoutY="122.0" prefHeight="26.0" prefWidth="80.0" />
+      <Label layoutX="396.0" layoutY="126.0" prefHeight="18.0" prefWidth="38.0" text="PPA" />
+      <ChoiceBox layoutX="440.0" layoutY="122.0" prefHeight="26.0" prefWidth="71.0" />
+      <Label layoutX="27.0" layoutY="165.0" prefHeight="18.0" prefWidth="71.0" text="Fournisseur" />
+      <ChoiceBox layoutX="105.0" layoutY="161.0" prefHeight="26.0" prefWidth="80.0" />
+      <Button cancelButton="true" contentDisplay="CENTER" layoutX="806.0" layoutY="37.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" style="-fx-background-color: b92626;" text="Fermer" />
+      <Button fx:id="fermer" layoutX="806.0" layoutY="75.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" text="Imprimer" />
+      <Button fx:id="fermer1" layoutX="806.0" layoutY="111.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" style="-fx-background-color: B2FF97;" text="Synthése" />
+      <Button fx:id="fermer11" layoutX="806.0" layoutY="148.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" style="-fx-background-color: FFA9A9;" text="Details" />
+      <Button fx:id="fermer1111" layoutX="511.0" layoutY="223.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" text="Annuler" />
+      <Button fx:id="fermer11111" layoutX="670.0" layoutY="223.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" style="-fx-background-color: b86555;" text="Supprimer" />
+      <Button fx:id="fermer111111" layoutX="811.0" layoutY="223.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" text="Valider" />
+      <TableView layoutX="15.0" layoutY="278.0" prefHeight="203.0" prefWidth="918.0">
+         <columns>
+            <TableColumn prefWidth="81.59997272491455" text="Produit" />
+            <TableColumn prefWidth="128.80001831054688" text="Prix achats TTC" />
+            <TableColumn prefWidth="94.40003967285156" text="Prix achats HT" />
+            <TableColumn prefWidth="119.19998168945312" text="PPA sans PHP" />
+            <TableColumn prefWidth="96.79998779296875" text="Marge %" />
+            <TableColumn prefWidth="60.79998779296875" text="SHP" />
+            <TableColumn prefWidth="66.4000244140625" text="PPA" />
+            <TableColumn prefWidth="52.800048828125" text="TVA%" />
+            <TableColumn prefWidth="56.79998779296875" text="QTE" />
+            <TableColumn prefWidth="47.199951171875" text="Stock" />
+            <TableColumn minWidth="2.4000244140625" prefWidth="30.4000244140625" text="LOT" />
+            <TableColumn prefWidth="99.199951171875" text="Total HT" />
+         </columns>
+      </TableView>
+      <Label layoutX="511.0" layoutY="73.0" prefHeight="18.0" prefWidth="112.0" text="Montant theorique" />
+      <ChoiceBox layoutX="630.0" layoutY="69.0" prefHeight="26.0" prefWidth="102.0" />
+      <Label layoutX="516.0" layoutY="127.0" prefHeight="18.0" prefWidth="38.0" text="SHP" />
+      <ChoiceBox layoutX="560.0" layoutY="123.0" prefHeight="26.0" prefWidth="71.0" />
+      <Label layoutX="643.0" layoutY="126.0" prefHeight="18.0" prefWidth="38.0" text="TVA" />
+      <ChoiceBox layoutX="687.0" layoutY="122.0" prefHeight="26.0" prefWidth="71.0" />
+      <Label layoutX="195.0" layoutY="165.0" prefHeight="18.0" prefWidth="46.0" text="N lOT" />
+      <ChoiceBox layoutX="230.0" layoutY="161.0" prefHeight="26.0" prefWidth="80.0" />
+      <Label layoutX="322.0" layoutY="165.0" prefHeight="18.0" prefWidth="62.0" text="Marge %" />
+      <ChoiceBox layoutX="389.0" layoutY="161.0" prefHeight="26.0" prefWidth="80.0" />
+      <Label layoutX="481.0" layoutY="165.0" prefHeight="18.0" prefWidth="38.0" text="QTE" />
+      <ChoiceBox layoutX="511.0" layoutY="161.0" prefHeight="26.0" prefWidth="80.0" />
+      <Label layoutX="612.0" layoutY="165.0" prefHeight="18.0" prefWidth="80.0" text="PPA Sana PHP" />
+      <ChoiceBox layoutX="698.0" layoutY="161.0" prefHeight="26.0" prefWidth="80.0" />
+      <Label layoutX="28.0" layoutY="200.0" prefHeight="18.0" prefWidth="102.0" text="Prix achats TTC" />
+      <ChoiceBox layoutX="141.0" layoutY="196.0" prefHeight="26.0" prefWidth="80.0" />
+      <Button fx:id="fermer11112" layoutX="14.0" layoutY="236.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" text="Ajouter UG" />
+      <Button fx:id="fermer111121" layoutX="130.0" layoutY="236.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" text="Detail produit " />
+      <Button fx:id="fermer1111211" layoutX="259.0" layoutY="236.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" text="Recherche" />
+      <Label layoutX="61.0" layoutY="484.0" prefHeight="146.0" prefWidth="236.0" style="-fx-background-radius: 20;" styleClass="box4" stylesheets="@style3.css" />
+      <Label layoutX="75.0" layoutY="495.0" prefHeight="38.0" prefWidth="202.0" text="Nb produits:              0.00">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="73.0" layoutY="526.0" prefHeight="38.0" prefWidth="202.0" text="Total Sans PHP :        0.00">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="73.0" layoutY="561.0" prefHeight="18.0" prefWidth="202.0" text="        Total  SHP                         0.00" />
+      <Label layoutX="73.0" layoutY="578.0" prefHeight="18.0" prefWidth="202.0" text="        Total PPA                          0.00" />
+      <Label layoutX="339.0" layoutY="498.0" prefHeight="131.0" prefWidth="202.0" style="-fx-background-radius: 20; -fx-background-color: BEFFF8;" styleClass="box4" stylesheets="@style3.css" />
+      <Label layoutX="351.0" layoutY="505.0" prefHeight="26.0" prefWidth="179.0" text="Total HT:                      0.00">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="350.0" layoutY="531.0" prefHeight="26.0" prefWidth="179.0" text="Total TVA :                   0.00">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="350.0" layoutY="557.0" prefHeight="26.0" prefWidth="179.0" text="Total TTC:                     0.00">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="350.0" layoutY="583.0" prefHeight="26.0" prefWidth="179.0" text="Total a Payer:               0.00">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="612.0" layoutY="495.0" prefHeight="131.0" prefWidth="266.0" style="-fx-background-radius: 20; -fx-background-color: BEFFF8;" styleClass="box4" stylesheets="@style3.css" />
+      <Label layoutX="623.0" layoutY="501.0" prefHeight="26.0" prefWidth="179.0" text="Différence :                 0.00">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="621.0" layoutY="527.0" prefHeight="26.0" prefWidth="62.0" text="Remise">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="626.0" layoutY="557.0" prefHeight="26.0" prefWidth="71.0" text="Ehéance">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="623.0" layoutY="596.0" prefHeight="26.0" prefWidth="126.0" text="Bon de commande ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="758.0" layoutY="527.0" prefHeight="0.0" prefWidth="71.0" />
+      <TextField layoutX="758.0" layoutY="557.0" prefHeight="26.0" prefWidth="71.0" />
+      <TextField layoutX="758.0" layoutY="596.0" prefHeight="26.0" prefWidth="71.0" />
+   </children>
+</AnchorPane>
