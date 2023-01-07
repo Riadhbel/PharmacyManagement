@@ -4,7 +4,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
-//import static java.sql.DriverManager.println;
+import static java.sql.DriverManager.println;
 
 
 public class loginController{
