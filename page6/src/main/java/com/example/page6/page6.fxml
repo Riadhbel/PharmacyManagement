@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="600.0">
+               <image>
+                  <Image url="@../../../logo.jpeg" />
+               </image>
+            </ImageView>
+            <TextField fx:id="date" layoutX="42.0" layoutY="6.0" prefHeight="15.0" prefWidth="93.0" />
+            <TextField fx:id="nfact" layoutX="191.0" layoutY="6.0" prefHeight="15.0" prefWidth="93.0" />
+            <TextField fx:id="nbl" layoutX="327.0" layoutY="6.0" prefHeight="15.0" prefWidth="93.0" />
+            <TextField fx:id="mont" layoutX="498.0" layoutY="6.0" prefHeight="15.0" prefWidth="93.0" />
+            <Label layoutX="14.0" layoutY="10.0" text="Date" />
+            <Label layoutX="135.0" layoutY="10.0" text="N° Facture" />
+            <Label layoutX="291.0" layoutY="10.0" text="N° BL" />
+            <Label layoutX="420.0" layoutY="10.0" text="Montant théor" />
+            <ChoiceBox fx:id="typeachat" layoutX="89.0" layoutY="40.0" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: white;" />
+            <ChoiceBox fx:id="fourn" layoutX="82.0" layoutY="73.0" prefHeight="25.0" prefWidth="93.0" style="-fx-background-color: white;" />
+            <Label layoutX="14.0" layoutY="44.0" text="Type d'achat" />
+            <Label layoutX="12.0" layoutY="77.0" text="Fournisseur" />
+            <Label layoutX="181.0" layoutY="44.0" text="Prix d'achat HT" />
+            <Label layoutX="181.0" layoutY="77.0" text="Code barre" />
+            <TextField fx:id="prachatht" layoutX="261.0" layoutY="40.0" prefHeight="25.0" prefWidth="40.0" />
+            <TextField fx:id="codebarre" layoutX="244.0" layoutY="73.0" prefHeight="25.0" prefWidth="56.0" />
+            <Label layoutX="301.0" layoutY="44.0" text="PPA" />
+            <Label layoutX="376.0" layoutY="44.0" text="SHP" />
+            <Label layoutX="448.0" layoutY="44.0" text="TVA" />
+            <Label layoutX="515.0" layoutY="44.0" text="N° Lot" />
+            <TextField fx:id="ppaa" layoutX="328.0" layoutY="40.0" prefHeight="25.0" prefWidth="40.0" />
+            <TextField fx:id="shpp" layoutX="404.0" layoutY="40.0" prefHeight="25.0" prefWidth="40.0" />
+            <TextField fx:id="tvaa" layoutX="470.0" layoutY="40.0" prefHeight="25.0" prefWidth="40.0" />
+            <TextField fx:id="nlot" layoutX="551.0" layoutY="40.0" prefHeight="25.0" prefWidth="40.0" />
+            <Label layoutX="301.0" layoutY="77.0" text="Marge%" />
+            <TextField fx:id="marg" layoutX="348.0" layoutY="73.0" prefHeight="25.0" prefWidth="56.0" />
+            <Label layoutX="404.0" layoutY="77.0" text="Quantité" />
+            <TextField fx:id="quant" layoutX="451.0" layoutY="73.0" prefHeight="25.0" prefWidth="56.0" />
+            <Label layoutX="509.0" layoutY="77.0" text="Pér" />
+            <TextField fx:id="perr" layoutX="532.0" layoutY="73.0" prefHeight="25.0" prefWidth="56.0" />
+            <Label layoutX="312.0" layoutY="105.0" text="PPA sans SHP" />
+            <TextField fx:id="ppasshp" layoutX="392.0" layoutY="101.0" prefHeight="25.0" prefWidth="56.0" />
+            <Label layoutX="453.0" layoutY="105.0" text="Prix achat TTC" />
+            <TextField fx:id="prixachttc" layoutX="532.0" layoutY="101.0" prefHeight="25.0" prefWidth="56.0" />
+            <Button fx:id="ug" layoutX="14.0" layoutY="101.0" mnemonicParsing="false" style="-fx-background-color: rgba(75, 185, 173, 1);" text="Ajouter UG" />
+            <Button fx:id="detail" layoutX="99.0" layoutY="101.0" mnemonicParsing="false" style="-fx-background-color: rgba(75, 185, 173, 1);" text="Détails du produit" />
+            <Button fx:id="impr" layoutX="14.0" layoutY="132.0" mnemonicParsing="false" style="-fx-background-color: rgba(75, 185, 173, 1);" text="Impression Code barre" />
+            <Button fx:id="recherche" layoutX="221.0" layoutY="101.0" mnemonicParsing="false" style="-fx-background-color: rgba(75, 185, 173, 1);" text="Recherche" />
+            <Button fx:id="f9" layoutX="163.0" layoutY="132.0" mnemonicParsing="false" style="-fx-background-color: white;" text="F9" />
+            <Button fx:id="annuler" layoutX="391.0" layoutY="132.0" mnemonicParsing="false" style="-fx-background-color: FFA4A4; -fx-background-radius: 30;" text="Annuler" />
+            <Button fx:id="supprimer" layoutX="455.0" layoutY="132.0" mnemonicParsing="false" style="-fx-background-color: FF2323; -fx-background-radius: 30;" text="Supprimer" />
+            <Button fx:id="valider" layoutX="534.0" layoutY="132.0" mnemonicParsing="false" style="-fx-background-color: CFFFB8; -fx-background-radius: 30;" text="Valider" />
+            <TableView fx:id="tableaucreation" layoutX="14.0" layoutY="163.0" prefHeight="89.0" prefWidth="577.0" style="-fx-background-color: rgba(190, 255, 248, 1);">
+              <columns>
+                <TableColumn fx:id="prod" prefWidth="51.0" text="Produit" />
+                <TableColumn fx:id="prixachatht" minWidth="0.0" prefWidth="32.0" text="Prix achat HT" />
+                  <TableColumn fx:id="prixachatttc" minWidth="0.0" prefWidth="33.0" text="Prix achat TTC" />
+                  <TableColumn fx:id="ppasansshp" minWidth="0.0" prefWidth="98.0" text="PPA sans SHP" />
+                  <TableColumn fx:id="marge" prefWidth="54.0" text="Marge%" />
+                  <TableColumn fx:id="shp" prefWidth="33.0" text="SHP" />
+                  <TableColumn fx:id="ppa" prefWidth="33.0" text="PPA" />
+                  <TableColumn fx:id="tva" prefWidth="43.0" text="TVA%" />
+                  <TableColumn fx:id="quantite" prefWidth="58.0" text="Quantité" />
+                  <TableColumn fx:id="stock" prefWidth="40.0" text="Stock" />
+                  <TableColumn fx:id="lot" prefWidth="28.0" text="Lot" />
+                  <TableColumn fx:id="per" prefWidth="25.0" text="Pér" />
+                  <TableColumn fx:id="cd" prefWidth="25.0" text="CD" />
+                  <TableColumn fx:id="ht" prefWidth="23.0" text="HT" />
+              </columns>
+            </TableView>
+            <Button fx:id="vald" layoutX="522.0" layoutY="339.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: CFFFB8; -fx-background-radius: 30;" text="Valider" />
+            <Button fx:id="enreg" layoutX="523.0" layoutY="306.0" mnemonicParsing="false" style="-fx-background-color: FFC061; -fx-background-radius: 30;" text="Enregistrer" />
+            <Button fx:id="fermer" layoutX="522.0" layoutY="370.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: FFA4A4; -fx-background-radius: 30;" text="Fermer" />
+            <Label layoutX="14.0" layoutY="261.0" prefHeight="131.0" prefWidth="182.0" style="-fx-background-radius: 20;" styleClass="label1" stylesheets="@style6.css" />
+            <Label layoutX="201.0" layoutY="261.0" prefHeight="131.0" prefWidth="118.0" style="-fx-background-radius: 20;" styleClass="label2" stylesheets="@style6.css" />
+            <Label layoutX="328.0" layoutY="261.0" prefHeight="131.0" prefWidth="182.0" style="-fx-background-radius: 20;" styleClass="label3" stylesheets="@style6.css" />
+            <Label layoutX="25.0" layoutY="273.0" text="Nombre de produits" />
+            <Label layoutX="25.0" layoutY="298.0" text="Total PPA sans SHP" />
+            <Label layoutX="25.0" layoutY="323.0" text="Total SHP" />
+            <Label layoutX="25.0" layoutY="346.0" text="Total PPA" />
+            <Label fx:id="nbrproduit" layoutX="164.0" layoutY="273.0" text="00" />
+            <Label fx:id="totalppasansshp" layoutX="164.0" layoutY="298.0" text="0.00" />
+            <Label fx:id="totalshp" layoutX="164.0" layoutY="323.0" text="0.00" />
+            <Label fx:id="totalppa" layoutX="164.0" layoutY="346.0" text="0.00" />
+            <Label layoutX="207.0" layoutY="273.0" text="Total HT" />
+            <Label layoutX="207.0" layoutY="298.0" text="Total TVA" />
+            <Label layoutX="207.0" layoutY="323.0" text="Total TTC" />
+            <Label layoutX="207.0" layoutY="346.0" text="Total à payer" />
+            <Label fx:id="totalht" layoutX="289.0" layoutY="273.0" text="0.00" />
+            <Label fx:id="totaltva" layoutX="289.0" layoutY="298.0" text="0.00" />
+            <Label fx:id="totalttc" layoutX="289.0" layoutY="323.0" text="0.00" />
+            <Label fx:id="totalapayer" layoutX="289.0" layoutY="346.0" text="0.00" />
+            <Label layoutX="346.0" layoutY="273.0" text="Diffèrence" />
+            <Label layoutX="346.0" layoutY="298.0" text="Remise" />
+            <Label layoutX="346.0" layoutY="323.0" text="Echéance" />
+            <Label layoutX="346.0" layoutY="346.0" text="Bon de comm" />
+            <Label fx:id="diff" layoutX="448.0" layoutY="273.0" text="0.00" />
+            <Label layoutX="432.0" layoutY="294.0" prefHeight="17.0" prefWidth="56.0" style="-fx-background-color: white;" />
+            <Label layoutX="432.0" layoutY="319.0" prefHeight="17.0" prefWidth="56.0" style="-fx-background-color: white;" />
+            <Label layoutX="432.0" layoutY="344.0" prefHeight="17.0" prefWidth="56.0" style="-fx-background-color: white;" />
+            <Label fx:id="remise" layoutX="448.0" layoutY="294.0" prefHeight="17.0" prefWidth="25.0" />
+            <Label fx:id="echeance" layoutX="448.0" layoutY="319.0" prefHeight="17.0" prefWidth="25.0" />
+            <Label fx:id="bon" layoutX="448.0" layoutY="344.0" prefHeight="17.0" prefWidth="25.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>
