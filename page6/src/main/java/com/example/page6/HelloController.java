@@ -1,4 +1,4 @@
-package com.example.historiqueventes;
+package com.example.page6;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
