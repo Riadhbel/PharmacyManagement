@@ -17,7 +17,7 @@
             <Image url="@v870-tang-36.jpg" />
          </image>
       </ImageView>
-      <Label alignment="CENTER" layoutX="323.0" layoutY="14.0" prefHeight="38.0" prefWidth="304.0" text="Historique des Achats" textAlignment="CENTER" underline="true">
+      <Label alignment="CENTER" layoutX="633.0" layoutY="24.0" prefHeight="38.0" prefWidth="304.0" text="Historique des Achats" textAlignment="CENTER" underline="true">
          <font>
             <Font name="Arial Black" size="20.0" />
          </font>
@@ -27,23 +27,23 @@
       <Label layoutX="277.0" layoutY="82.0" prefHeight="18.0" prefWidth="38.0" text="Piéce" />
       <ChoiceBox layoutX="324.0" layoutY="78.0" prefWidth="150.0" />
       <Label layoutX="502.0" layoutY="82.0" prefHeight="18.0" prefWidth="63.0" text="N Piéce" />
-      <ChoiceBox layoutX="583.0" layoutY="78.0" prefWidth="150.0" />
+      <ChoiceBox layoutX="583.0" layoutY="78.0" prefHeight="26.0" prefWidth="218.0" />
       <Label layoutX="48.0" layoutY="126.0" prefHeight="18.0" prefWidth="38.0" text="Nature" />
-      <ChoiceBox layoutX="95.0" layoutY="122.0" prefWidth="150.0" />
-      <Label layoutX="277.0" layoutY="126.0" prefHeight="18.0" prefWidth="56.0" text="Utilisateur" />
-      <ChoiceBox layoutX="338.0" layoutY="122.0" prefWidth="150.0" />
-      <Label layoutX="502.0" layoutY="126.0" prefHeight="18.0" prefWidth="71.0" text="Date entrée" />
-      <ChoiceBox layoutX="583.0" layoutY="122.0" prefWidth="150.0" />
-      <Label layoutX="48.0" layoutY="171.0" prefHeight="18.0" prefWidth="71.0" text="Fournisseur" />
-      <ChoiceBox layoutX="126.0" layoutY="167.0" prefWidth="150.0" />
-      <Button cancelButton="true" contentDisplay="CENTER" layoutX="806.0" layoutY="37.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" style="-fx-background-color: b92626;" text="Fermer" />
-      <Button fx:id="fermer" layoutX="806.0" layoutY="75.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" text="Imprimer" />
-      <Button fx:id="fermer1" layoutX="806.0" layoutY="111.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" style="-fx-background-color: B2FF97;" text="Synthése" />
-      <Button fx:id="fermer11" layoutX="806.0" layoutY="148.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" style="-fx-background-color: FFA9A9;" text="Details" />
-      <Button fx:id="fermer1111" layoutX="357.0" layoutY="167.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" text="Modifier" />
-      <Button fx:id="fermer11111" layoutX="516.0" layoutY="167.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" style="-fx-background-color: b86555;" text="Supprimer" />
-      <Button fx:id="fermer111111" layoutX="657.0" layoutY="167.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" text="Produits" />
-      <TableView layoutX="40.0" layoutY="255.0" prefHeight="414.0" prefWidth="1489.0">
+      <ChoiceBox layoutX="95.0" layoutY="122.0" prefHeight="26.0" prefWidth="276.0" />
+      <Label layoutX="412.0" layoutY="126.0" prefHeight="18.0" prefWidth="56.0" text="Utilisateur" />
+      <ChoiceBox layoutX="473.0" layoutY="122.0" prefHeight="26.0" prefWidth="218.0" />
+      <Label layoutX="48.0" layoutY="171.0" prefHeight="18.0" prefWidth="71.0" text="Date entrée" />
+      <ChoiceBox layoutX="129.0" layoutY="167.0" prefHeight="26.0" prefWidth="240.0" />
+      <Label layoutX="387.0" layoutY="170.0" prefHeight="18.0" prefWidth="71.0" text="Fournisseur" />
+      <ChoiceBox layoutX="467.0" layoutY="166.0" prefHeight="26.0" prefWidth="258.0" />
+      <Button cancelButton="true" contentDisplay="CENTER" layoutX="1335.0" layoutY="43.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" style="-fx-background-color: b92626;" text="Fermer" />
+      <Button fx:id="fermer" layoutX="1335.0" layoutY="81.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" text="Imprimer" />
+      <Button fx:id="fermer1" layoutX="1335.0" layoutY="117.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" style="-fx-background-color: B2FF97;" text="Synthése" />
+      <Button fx:id="fermer11" layoutX="1335.0" layoutY="154.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" style="-fx-background-color: FFA9A9;" text="Details" />
+      <Button fx:id="fermer1111" layoutX="909.0" layoutY="154.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" text="Modifier" />
+      <Button fx:id="fermer11111" layoutX="1054.0" layoutY="154.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" style="-fx-background-color: b86555;" text="Supprimer" />
+      <Button fx:id="fermer111111" layoutX="1195.0" layoutY="154.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" text="Produits" />
+      <TableView layoutX="25.0" layoutY="207.0" prefHeight="462.0" prefWidth="1490.0">
         <columns>
           <TableColumn prefWidth="99.99996948242188" text="type" />
           <TableColumn prefWidth="80.80000305175781" text="N'" />

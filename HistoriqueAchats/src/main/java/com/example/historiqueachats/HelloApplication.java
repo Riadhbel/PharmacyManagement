@@ -1,4 +1,4 @@
-package com.example.page8;
+package com.example.historiqueachats;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -11,9 +11,10 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("HistoriqueA.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 900, 750);
-        stage.setTitle("Historique des Achats");
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setTitle("Hello!");
         stage.setScene(scene);
+        stage.setMaximized(true);
         stage.show();
     }
 
