@@ -10,10 +10,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="633.0" prefWidth="952.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1654.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <ImageView fitHeight="682.0" fitWidth="950.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="900.0" fitWidth="1654.0" pickOnBounds="true">
          <image>
             <Image url="@v870-tang-36.jpg" />
          </image>
@@ -44,29 +43,47 @@
       <Button fx:id="fermer1111" layoutX="357.0" layoutY="167.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" text="Modifier" />
       <Button fx:id="fermer11111" layoutX="516.0" layoutY="167.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" style="-fx-background-color: b86555;" text="Supprimer" />
       <Button fx:id="fermer111111" layoutX="657.0" layoutY="167.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" text="Produits" />
-      <TableView layoutX="5.0" layoutY="223.0" prefHeight="271.0" prefWidth="927.0">
+      <TableView layoutX="40.0" layoutY="255.0" prefHeight="414.0" prefWidth="1489.0">
         <columns>
-          <TableColumn prefWidth="38.399964332580566" text="type" />
-          <TableColumn prefWidth="39.19997787475586" text="N'" />
-            <TableColumn text="Date entrée" />
-            <TableColumn prefWidth="69.5999755859375" text="Utilisateur" />
-            <TableColumn prefWidth="90.40003967285156" text="Fournisseur" />
-            <TableColumn prefWidth="48.79998779296875" text="Piéce" />
-            <TableColumn prefWidth="82.4000244140625" text="Date Piéce" />
-            <TableColumn prefWidth="82.4000244140625" text="N' Facture" />
-            <TableColumn prefWidth="70.39996337890625" text="Nature" />
-            <TableColumn prefWidth="40.00006103515625" text="PPA" />
-            <TableColumn prefWidth="66.39996337890625" text="Total SHP" />
-            <TableColumn prefWidth="80.00006103515625" text="Total TTC" />
-            <TableColumn prefWidth="56.0" text="Remise" />
-            <TableColumn prefWidth="78.4000122070313" text="Total NE" />
+          <TableColumn prefWidth="99.99996948242188" text="type" />
+          <TableColumn prefWidth="80.80000305175781" text="N'" />
+            <TableColumn prefWidth="102.4000244140625" text="Date entrée" />
+            <TableColumn prefWidth="117.60000610351562" text="Utilisateur" />
+            <TableColumn prefWidth="111.19998168945312" text="Fournisseur" />
+            <TableColumn prefWidth="89.5999755859375" text="Piéce" />
+            <TableColumn prefWidth="116.79998779296875" text="Date Piéce" />
+            <TableColumn prefWidth="142.4000244140625" text="N' Facture" />
+            <TableColumn prefWidth="76.80010986328125" text="Nature" />
+            <TableColumn prefWidth="73.60009765625" text="PPA" />
+            <TableColumn prefWidth="131.199951171875" text="Total SHP" />
+            <TableColumn prefWidth="98.4000244140625" text="Total TTC" />
+            <TableColumn prefWidth="166.4000244140625" text="Remise" />
+            <TableColumn prefWidth="75.199951171875" text="Total NE" />
         </columns>
       </TableView>
-      <Label alignment="CENTER" layoutX="746.0" layoutY="514.0" prefHeight="25.0" prefWidth="123.0" style="-fx-background-color: FFA9A9;" text="Avoirs" />
-      <Label alignment="CENTER" layoutX="107.0" layoutY="514.0" prefHeight="25.0" prefWidth="123.0" style="-fx-background-color: FFA010;" text="Achats" />
-      <Label layoutX="107.0" layoutY="553.0" prefHeight="25.0" prefWidth="123.0" text="Total                 0.00" />
-      <Label layoutX="746.0" layoutY="553.0" prefHeight="25.0" prefWidth="123.0" text="Total                0.00" />
-      <Label layoutX="746.0" layoutY="579.0" prefHeight="25.0" prefWidth="123.0" text="Remise            0.00" />
-      <Label layoutX="107.0" layoutY="579.0" prefHeight="25.0" prefWidth="123.0" text="Remise             0.00" />
+      <Label alignment="CENTER" layoutX="1000.0" layoutY="681.0" prefHeight="46.0" prefWidth="438.0" style="-fx-background-color: FFA9A9;" text="Avoirs">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="95.0" layoutY="681.0" prefHeight="46.0" prefWidth="438.0" style="-fx-background-color: FFA010;" text="Achats">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font></Label>
+      <Label layoutX="252.0" layoutY="734.0" prefHeight="27.0" prefWidth="160.0" text="Total:    0.00">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="1162.0" layoutY="733.0" prefHeight="27.0" prefWidth="102.0" text="Total:  0.00">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="1162.0" layoutY="759.0" prefHeight="27.0" prefWidth="114.0" text="Remise: 0.00">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="252.0" layoutY="760.0" prefHeight="25.0" prefWidth="123.0" text="Remise:  0.00">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
    </children>
 </AnchorPane>
