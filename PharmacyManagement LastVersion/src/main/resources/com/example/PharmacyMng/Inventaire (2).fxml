@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.PharmacyMng.InventaireController">
+   <children>
+      <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true">
+         <image>
+            <Image url="@../PharmacyManagment/page5/src/main/resources/com/example/page5/v870-tang-36.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="192.0" layoutY="22.0" lineSpacing="1.0" prefHeight="89.0" prefWidth="468.0" text="Inventaire" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="Arial Black" size="40.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textProduit" layoutX="284.0" layoutY="171.0" prefHeight="26.0" prefWidth="418.0" />
+      <Label layoutX="97.0" layoutY="165.0" prefHeight="38.0" prefWidth="187.0" text="PRODUIT">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableProduit" layoutX="108.0" layoutY="300.0" prefHeight="597.0" prefWidth="1695.0" style="-fx-background-color: BEFFF8;">
+         <columns>
+            <TableColumn fx:id="colIdProduit" prefWidth="132.0" text="Id" />
+            <TableColumn fx:id="colNomProduit" prefWidth="172.0" text="Produit" />
+            <TableColumn fx:id="colLotProduit" prefWidth="334.0" text="Lot" />
+            <TableColumn fx:id="colPAchatProduit" minWidth="0.0" prefWidth="174.0" text="Prix d'achat" />
+            <TableColumn fx:id="colPVenteProduit" prefWidth="334.0" text="Prix de vente" />
+            <TableColumn fx:id="colQteProduit" prefWidth="334.0" text="Qte" />
+            <TableColumn fx:id="colFamilleProduit" prefWidth="214.0" text="famille" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

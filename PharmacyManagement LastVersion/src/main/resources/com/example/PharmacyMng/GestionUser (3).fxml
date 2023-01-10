@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.PharmacyMng.UserController">
+   <children>
+      <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true">
+         <image>
+            <Image url="@../PharmacyManagment/page5/src/main/resources/com/example/page5/v870-tang-36.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="textIdUser" layoutX="273.0" layoutY="259.0" prefHeight="26.0" prefWidth="418.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="192.0" layoutY="22.0" lineSpacing="1.0" prefHeight="89.0" prefWidth="629.0" text="Gestion utilisateur" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="Arial Black" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="79.0" layoutY="253.0" prefHeight="38.0" prefWidth="187.0" text="idUsername">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textUsername" layoutX="273.0" layoutY="378.0" prefHeight="26.0" prefWidth="418.0" />
+      <Label layoutX="79.0" layoutY="372.0" prefHeight="38.0" prefWidth="187.0" text="username">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textPassword" layoutX="273.0" layoutY="484.0" prefHeight="26.0" prefWidth="418.0" />
+      <Label layoutX="79.0" layoutY="478.0" prefHeight="38.0" prefWidth="187.0" text="password">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textType" layoutX="273.0" layoutY="583.0" prefHeight="26.0" prefWidth="418.0" />
+      <Label layoutX="79.0" layoutY="577.0" prefHeight="38.0" prefWidth="187.0" text="type user">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSaveUser" layoutX="647.0" layoutY="941.0" mnemonicParsing="false" onAction="#createUser" prefHeight="38.0" prefWidth="140.0" style="-fx-background-color: B2FF97;" text="Apply">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button layoutX="878.0" layoutY="941.0" mnemonicParsing="false" onAction="#clearFields" prefHeight="38.0" prefWidth="140.0" style="-fx-background-color: FFA9A9;" text="Annuler">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <TableView fx:id="tableUser" layoutX="990.0" layoutY="300.0" onMouseClicked="#getSelected" prefHeight="421.0" prefWidth="813.0" style="-fx-background-color: BEFFF8;">
+         <columns>
+            <TableColumn fx:id="colIdUser" prefWidth="132.0" text="IdUser" />
+            <TableColumn fx:id="colUsername" prefWidth="172.0" text="username" />
+            <TableColumn fx:id="colPassword" prefWidth="334.0" text="password" />
+            <TableColumn fx:id="colTypeUser" minWidth="0.0" prefWidth="174.0" text="type user" />
+         </columns>
+      </TableView>
+      <Button layoutX="1122.0" layoutY="941.0" mnemonicParsing="false" onAction="#editUser" prefHeight="44.0" prefWidth="140.0" text="Mise a jour ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="1327.0" layoutY="941.0" mnemonicParsing="false" onAction="#deleteUser" prefHeight="44.0" prefWidth="140.0" text="Supprimer">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
