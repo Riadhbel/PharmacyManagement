@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.PharmacyMng.AccueilController">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" layoutY="-6.0">
+         <image>
+            <Image url="@logo.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="317.0" fitWidth="171.0" layoutX="1602.0" layoutY="699.0">
+         <image>
+            <Image url="@mmmm4.JPG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="438.0" fitWidth="471.0" layoutX="625.0" layoutY="299.0">
+         <image>
+            <Image url="@logoo.JPG" />
+         </image>
+      </ImageView>
+      <Label layoutX="42.0" layoutY="498.0" prefHeight="249.0" prefWidth="352.0" style="-fx-background-radius: 30;" styleClass="backgroundColor" stylesheets="@style2.css" />
+      <Label layoutX="52.0" layoutY="518.0" prefHeight="35.0" prefWidth="148.0" text="Stock en rupture :">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="604.0" prefHeight="35.0" prefWidth="139.0" text="Pér. Proche:">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="658.0" prefHeight="35.0" prefWidth="148.0" text="Périmés:">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="comp" layoutX="351.0" layoutY="106.0" mnemonicParsing="false" onAction="#goToComptoire" prefHeight="90.0" prefWidth="90.0" style="-fx-background-radius: 100;" styleClass="ball1" stylesheets="@style2.css">
+         <graphic>
+            <ImageView blendMode="DARKEN" fitHeight="63.0" fitWidth="70.0" focusTraversable="true">
+               <image>
+                  <Image url="@ringbell.JPG" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="vente" layoutX="556.0" layoutY="106.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="90.0" style="-fx-background-radius: 100;" styleClass="ball2" stylesheets="@style2.css">
+         <graphic>
+            <ImageView blendMode="DARKEN" fitHeight="63.0" fitWidth="70.0">
+               <image>
+                  <Image url="@sell.JPG" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="achat" layoutX="755.0" layoutY="106.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="90.0" style="-fx-background-radius: 100;" styleClass="ball3" stylesheets="@style2.css">
+         <graphic>
+            <ImageView blendMode="DARKEN" fitHeight="63.0" fitWidth="70.0">
+               <image>
+                  <Image url="@listt.JPG" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="stock" layoutX="956.0" layoutY="105.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="90.0" style="-fx-background-radius: 100;" styleClass="ball4" stylesheets="@style2.css">
+         <graphic>
+            <ImageView blendMode="DARKEN" fitHeight="63.0" fitWidth="70.0">
+               <image>
+                  <Image url="@stock.JPG" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="quit" layoutX="1166.0" layoutY="106.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="90.0" style="-fx-background-radius: 100;" styleClass="ball5" stylesheets="@style2.css">
+         <graphic>
+            <ImageView blendMode="DARKEN" fitHeight="63.0" fitWidth="56.0">
+               <image>
+                  <Image url="@quit.JPG" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Label layoutX="348.0" layoutY="198.0" prefHeight="30.0" prefWidth="97.0" text="Comptoire">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="550.0" layoutY="198.0" prefHeight="30.0" prefWidth="97.0" text="Vente">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="752.0" layoutY="197.0" prefHeight="30.0" prefWidth="97.0" text="Achat">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="953.0" layoutY="193.0" prefHeight="35.0" prefWidth="97.0" text="Stock">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="1163.0" layoutY="193.0" prefHeight="35.0" prefWidth="97.0" text="Quitter">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
