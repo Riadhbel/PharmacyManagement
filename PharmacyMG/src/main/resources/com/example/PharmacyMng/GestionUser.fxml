@@ -12,13 +12,13 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.PharmacyMng.UserController">
    <children>
-      <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true">
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true">
          <image>
-            <Image url="@../PharmacyManagment/page5/src/main/resources/com/example/page5/v870-tang-36.jpg" />
+            <Image url="@v870-tang-36.jpg" />
          </image>
       </ImageView>
       <TextField fx:id="textIdUser" layoutX="273.0" layoutY="259.0" prefHeight="26.0" prefWidth="418.0" />
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="192.0" layoutY="22.0" lineSpacing="1.0" prefHeight="89.0" prefWidth="468.0" text="Ajouter un client" textAlignment="CENTER" underline="true">
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="192.0" layoutY="22.0" lineSpacing="1.0" prefHeight="89.0" prefWidth="542.0" text="Ajouter un Utilisateur" textAlignment="CENTER" underline="true">
          <font>
             <Font name="Arial Black" size="40.0" />
          </font>
@@ -68,6 +68,11 @@
          </font>
       </Button>
       <Button layoutX="1327.0" layoutY="941.0" mnemonicParsing="false" onAction="#deleteUser" prefHeight="44.0" prefWidth="140.0" text="Supprimer">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="426.0" layoutY="941.0" mnemonicParsing="false" onAction="#goBack" prefHeight="44.0" prefWidth="140.0" text="Retour">
          <font>
             <Font size="20.0" />
          </font>

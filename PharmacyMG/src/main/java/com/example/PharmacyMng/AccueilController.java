@@ -18,16 +18,51 @@ public class AccueilController {
     Scene scene;
      Parent root = null;
     @FXML
-    private void goToComptoire(ActionEvent event) throws IOException {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("comptoire.fxml"));
-            root = (Parent) loader.load();
-            AccueilController accueilController = loader.getController();
-            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        }
-        catch (IOException e){
-
-        }
-        stage.setScene(new Scene(root));
+    public void goToComptoire(ActionEvent event)throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("comptoire.fxml"));
+        stage =(Stage) ((Node)event.getSource()).getScene().getWindow();
+        scene= new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+    @FXML
+    public void goToUser(ActionEvent event)throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("GestionUser.fxml"));
+        stage =(Stage) ((Node)event.getSource()).getScene().getWindow();
+        scene= new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+    @FXML
+    public void goToAchats(ActionEvent event)throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("Achats.fxml"));
+        stage =(Stage) ((Node)event.getSource()).getScene().getWindow();
+        scene= new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+    @FXML
+    public void goToStock(ActionEvent event)throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("Inventaire.fxml"));
+        stage =(Stage) ((Node)event.getSource()).getScene().getWindow();
+        scene= new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+    @FXML
+    public void GoBack(ActionEvent event)throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("loginScreen.fxml"));
+        stage =(Stage) ((Node)event.getSource()).getScene().getWindow();
+        scene= new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+    @FXML
+    public void goToDashBoard(ActionEvent event)throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("DashBoard.fxml"));
+        stage =(Stage) ((Node)event.getSource()).getScene().getWindow();
+        scene= new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 }

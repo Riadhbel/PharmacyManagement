@@ -3,17 +3,23 @@ package com.example.PharmacyMng;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class AchatsController implements Initializable{
+public class AchatsController implements Initializable {
 
     @FXML
     private TextField textFournisseur;
@@ -31,7 +37,8 @@ public class AchatsController implements Initializable{
     private TextField textQte;
     @FXML
     private TextField textFamille;
-    @FXML TextField textidachats ;
+    @FXML
+    TextField textidachats;
 
 
     @FXML
@@ -52,9 +59,9 @@ public class AchatsController implements Initializable{
     @FXML
     private TableColumn<Achats, Integer> colPrixV;
     @FXML
-    private TableColumn <Achats,Integer> colQte;
+    private TableColumn<Achats, Integer> colQte;
     @FXML
-    private TableColumn <Achats ,String> colFamille;
+    private TableColumn<Achats, String> colFamille;
 
 
     int AchatsID = 0;
@@ -65,7 +72,7 @@ public class AchatsController implements Initializable{
     }
 
 
-    public void showAchats(){
+    public void showAchats() {
 
         ObservableList<Achats> achatslist = AchatsDB.getAchats();
         tableAchats.setItems(achatslist);
@@ -113,9 +120,9 @@ public class AchatsController implements Initializable{
     }*/
 
     @FXML
-    void getSelected (MouseEvent event){
+    void getSelected(MouseEvent event) {
         AchatsID = tableAchats.getSelectionModel().getSelectedIndex();
-        if (AchatsID <= -1){
+        if (AchatsID <= -1) {
 
             return;
         }
@@ -132,10 +139,11 @@ public class AchatsController implements Initializable{
 
 
     @FXML
-    public void clearFields(ActionEvent actionEvent){
+    public void clearFields(ActionEvent actionEvent) {
         clearFields();
     }
-    public void clearFields(){
+
+    public void clearFields() {
         textidachats.setText(null);
         textprixA.setText(null);
         textprixV.setText(null);
@@ -146,4 +154,17 @@ public class AchatsController implements Initializable{
         textQte.setText(null);
         AchatsID = 0;
     }
+
+    Stage stage;
+    Scene scene;
+    private Parent root;
+
+    public void GoBack(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("accueil.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
 }

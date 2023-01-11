@@ -87,5 +87,10 @@
             <Font size="16.0" />
          </font>
       </Label>
+      <Button layoutX="1159.0" layoutY="899.0" mnemonicParsing="false" onAction="#GoBack" prefHeight="84.0" prefWidth="291.0" text="Retour">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

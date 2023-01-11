@@ -7,25 +7,20 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 public class UserDB extends User {
-    static Connection connection = Database.getConnection();
-    static PreparedStatement statement = null;
-    static ResultSet resultSet = null;
+    public static ObservableList<User> getUser() {
 
-
-
-    public static ObservableList<User> getUsers(){
         ObservableList<User> users = FXCollections.observableArrayList();
 
         String query = "select * from user";
         try {
             statement = connection.prepareStatement(query);
             resultSet = statement.executeQuery();
-            while (resultSet.next()){
-                int userId = resultSet.getInt("userId");
+            while (resultSet.next()) {
+                int idUser = resultSet.getInt("idUser");
                 String username = resultSet.getString("username");
                 String password = resultSet.getString("password");
                 int typeUser = resultSet.getInt("typeUser");
-                User user = new User(userId,username, password, typeUser);
+                User user = new User(idUser, username, password,typeUser);
                 users.add(user);
             }
         } catch (SQLException e) {
@@ -33,6 +28,47 @@ public class UserDB extends User {
         }
 
         return users;
+    }
+    static Connection connection = Database.getConnection();
+    static PreparedStatement statement = null;
+    static ResultSet resultSet = null;
+
+    public static void persist(String username, String password,  int typeUser) {
+        String query = "insert into user(username, password, typeUser) values(?, ?, ?)";
+        try {
+            statement = connection.prepareStatement(query);
+            statement.setString(1, username);
+            statement.setString(2, password);
+            statement.setInt(3, typeUser);
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    public static void updateUser(int id,String username, String password, int typeUser){
+
+        String query = "update user set username = ?, password = ?, typeUser= ?  where idUser = ?";
+        try {
+            statement = connection.prepareStatement(query);
+            statement.setString(1, username);
+            statement.setString(2, password);
+            statement.setInt(3, typeUser);
+            statement.setInt(4, id);
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+    public static void deleteUser(int id) {
+        String query = "delete from user where idUser = ?";
+        try {
+            statement = connection.prepareStatement(query);
+            statement.setInt(1, id);
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public static int checklogin(String username,String password){
@@ -51,4 +87,5 @@ public class UserDB extends User {
         }
         return 1;
     }
+
 }

@@ -48,15 +48,15 @@
                </image>
             </ImageView>
          </graphic></Button>
-      <Button fx:id="vente" layoutX="556.0" layoutY="106.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="90.0" style="-fx-background-radius: 100;" styleClass="ball2" stylesheets="@style2.css">
+      <Button fx:id="vente" layoutX="556.0" layoutY="106.0" mnemonicParsing="false" onAction="#goToUser" prefHeight="90.0" prefWidth="90.0" style="-fx-background-radius: 100;" styleClass="ball2" stylesheets="@style2.css">
          <graphic>
-            <ImageView blendMode="DARKEN" fitHeight="63.0" fitWidth="70.0">
+            <ImageView blendMode="DARKEN" fitHeight="65.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@sell.JPG" />
+                  <Image url="@user.jpg" />
                </image>
             </ImageView>
          </graphic></Button>
-      <Button fx:id="achat" layoutX="755.0" layoutY="106.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="90.0" style="-fx-background-radius: 100;" styleClass="ball3" stylesheets="@style2.css">
+      <Button fx:id="achat" layoutX="755.0" layoutY="106.0" mnemonicParsing="false" onAction="#goToAchats" prefHeight="90.0" prefWidth="90.0" style="-fx-background-radius: 100;" styleClass="ball3" stylesheets="@style2.css">
          <graphic>
             <ImageView blendMode="DARKEN" fitHeight="63.0" fitWidth="70.0">
                <image>
@@ -64,7 +64,7 @@
                </image>
             </ImageView>
          </graphic></Button>
-      <Button fx:id="stock" layoutX="956.0" layoutY="105.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="90.0" style="-fx-background-radius: 100;" styleClass="ball4" stylesheets="@style2.css">
+      <Button fx:id="stock" layoutX="956.0" layoutY="105.0" mnemonicParsing="false" onAction="#goToStock" prefHeight="90.0" prefWidth="90.0" style="-fx-background-radius: 100;" styleClass="ball4" stylesheets="@style2.css">
          <graphic>
             <ImageView blendMode="DARKEN" fitHeight="63.0" fitWidth="70.0">
                <image>
@@ -72,7 +72,7 @@
                </image>
             </ImageView>
          </graphic></Button>
-      <Button fx:id="quit" layoutX="1166.0" layoutY="106.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="90.0" style="-fx-background-radius: 100;" styleClass="ball5" stylesheets="@style2.css">
+      <Button fx:id="quit" layoutX="1166.0" layoutY="106.0" mnemonicParsing="false" onAction="#GoBack" prefHeight="90.0" prefWidth="90.0" style="-fx-background-radius: 100;" styleClass="ball5" stylesheets="@style2.css">
          <graphic>
             <ImageView blendMode="DARKEN" fitHeight="63.0" fitWidth="56.0">
                <image>
@@ -85,7 +85,7 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="550.0" layoutY="198.0" prefHeight="30.0" prefWidth="97.0" text="Vente">
+      <Label alignment="CENTER" layoutX="527.0" layoutY="198.0" prefHeight="30.0" prefWidth="148.0" text="Gestion Utilisateur">
          <font>
             <Font name="Arial" size="16.0" />
          </font>
@@ -105,5 +105,19 @@
             <Font size="14.0" />
          </font>
       </Label>
+      <Label alignment="CENTER" layoutX="1374.0" layoutY="196.0" prefHeight="35.0" prefWidth="97.0" text="Dashboard">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="quit1" layoutX="1378.0" layoutY="106.0" mnemonicParsing="false" onAction="#goToDashBoard" prefHeight="90.0" prefWidth="90.0" style="-fx-background-radius: 100; -fx-background-color: bb3334;" styleClass="ball5">
+         <graphic>
+            <ImageView blendMode="DARKEN" fitHeight="52.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Dahsboard.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
    </children>
 </Pane>

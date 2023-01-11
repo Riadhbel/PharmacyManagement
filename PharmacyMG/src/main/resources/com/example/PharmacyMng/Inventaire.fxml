@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
@@ -11,9 +12,9 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.PharmacyMng.InventaireController">
    <children>
-      <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true">
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true">
          <image>
-            <Image url="@../PharmacyManagment/page5/src/main/resources/com/example/page5/v870-tang-36.jpg" />
+            <Image url="@v870-tang-36.jpg" />
          </image>
       </ImageView>
       <Label alignment="CENTER" contentDisplay="CENTER" layoutX="192.0" layoutY="22.0" lineSpacing="1.0" prefHeight="89.0" prefWidth="468.0" text="Inventaire" textAlignment="CENTER" underline="true">
@@ -27,7 +28,7 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <TableView fx:id="tableProduit" layoutX="108.0" layoutY="300.0" prefHeight="597.0" prefWidth="1695.0" style="-fx-background-color: BEFFF8;">
+      <TableView fx:id="tableProduit" layoutX="113.0" layoutY="242.0" prefHeight="597.0" prefWidth="1695.0" style="-fx-background-color: BEFFF8;">
          <columns>
             <TableColumn fx:id="colIdProduit" prefWidth="132.0" text="Id" />
             <TableColumn fx:id="colNomProduit" prefWidth="172.0" text="Produit" />
@@ -38,5 +39,15 @@
             <TableColumn fx:id="colFamilleProduit" prefWidth="214.0" text="famille" />
          </columns>
       </TableView>
+      <Button layoutX="935.0" layoutY="942.0" mnemonicParsing="false" onAction="#goToacceuil" prefHeight="38.0" prefWidth="187.0" text="Acceuil">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button layoutX="713.0" layoutY="942.0" mnemonicParsing="false" onAction="#goBack" prefHeight="38.0" prefWidth="187.0" text="Comptoire">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
